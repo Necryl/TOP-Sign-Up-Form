@@ -12,6 +12,53 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <div class="banner">
+        <div class="logo">
+            <img src="images/logo.svg" alt="Frulicious Logo depicting some fruits">
+            <h1 class="logo-text" style="font-family: 'Chewy', cursive">frulicious</h1>
+        </div>
+        <div class="main">
+            <div class="mainWrapper">
+                <p class="main-text">
+                    This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>Sign up <i>now</i> to get started.<br><br>You <i>know</i> you want to.
+                </p>
+                <form id="theForm">
+                    <p class="lets">Let's do this!</p>
+                    <div class="formControls">
+                        <ul class="firstCol">
+                            <li class="firstNameLi">
+                                <label for="firstName">FIRST NAME</label>
+                                <input type="text" id="firstName">
+                            </li>
+                            <li class="emailLi">
+                                <label for="email">EMAIL</label>
+                                <input type="email" id="email">
+                            </li>
+                            <li class="pswdLi">
+                                <label for="pswd">PASSWORD</label>
+                                <input type="password" id="pswd">
+                            </li>
+                        </ul>
+                        <ul class="secondCol">
+                            <li class="lastNameLi">
+                                <label for="lastName">LAST NAME</label>
+                                <input type="text" id="lastName">
+                            </li>
+                            <li class="phoneLi">
+                                <label for="phone">PHONE NUMBER</label>
+                                <input type="tel" id="phone">
+                            </li>
+                            <li class="confirmLi">
+                                <label for="confirm">CONFIRM PASSWORD</label>
+                                <input type="password" id="confirm">
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+                <button class="submitBtn" type="submit" form="theForm">Create Account</button>
+                <p class="already">Already have an account? <span class="login">Log in</span></p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

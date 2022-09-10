@@ -6,3 +6,9 @@
 * {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
+
+.logo>img {
+    --logoImgSize: 6em;
+    width: var(--logoImgSize);
+    height: var(--logoImgSize);
+}

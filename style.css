@@ -142,7 +142,7 @@ body {
 
     font-size: 1rem;
 }
-.formControls input:valid {
+input[type='text']:valid, input[type='email']:valid, input[type='tel']:valid{
     outline: 1px solid rgb(100, 150, 66);
 }
 :root {

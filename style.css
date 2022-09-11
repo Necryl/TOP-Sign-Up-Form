@@ -5,6 +5,7 @@
 
 * {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 300;
 }
 
 html {
@@ -71,7 +72,7 @@ body {
 .main {
     background-color: aliceblue;
 
-    --paddingForMain: 3vh 3vw;
+    --paddingForMain: 3vw;
 
     display: flex;
     flex-direction: column;
@@ -79,19 +80,20 @@ body {
 }
 
 .main-text {
-    padding: var(--paddingForMain);
+    padding: 3vh var(--paddingForMain);
+}
+
+.main-text, .main-text *, .lets, .lets * {
+    font-weight: 500;
 }
 
 #theForm {
-    padding: var(--paddingForMain);
+    padding: 3vh var(--paddingForMain);
 
     display: flex;
     flex-direction: column;
 
     background-color: aquamarine;
-}
-
-.lets {
 }
 
 .formControls {
@@ -116,10 +118,28 @@ body {
 }
 
 .submitBtn {
-    margin: var(--paddingForMain);
+    margin: 3vh var(--paddingForMain);
     width: 10rem;
 }
 
 .already {
-    padding: var(--paddingForMain);
+    padding: 0vh var(--paddingForMain);
+    margin: 0%;
+
+    font-size: 0.9rem;
+}
+.already > a {
+    color: rgb(28, 29, 87);
+    font-weight: 500;
+    text-decoration: none;
+    transition: 500ms ease-out;
+}
+
+.already > a:hover {
+    color: #fff;
+    text-shadow: 0px 0px 5px rgb(4, 20, 247);
+    transition: 100ms ease-in;
+}
+.already > a:active {
+    color: rgb(76, 48, 180);
 }

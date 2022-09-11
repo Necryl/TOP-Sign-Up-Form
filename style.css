@@ -168,6 +168,8 @@ input[type='text']:valid, input[type='email']:valid, input[type='tel']:valid{
 .pswdError {
     margin: 0%;
     padding: 0%;
+
+    margin-top: -0.5rem;
     
     color: red;
 

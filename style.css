@@ -156,7 +156,15 @@ body {
 .formControls input:placeholder-shown {
     outline: none;
 }
+.pswdError {
+    margin: 0%;
+    padding: 0%;
+    
+    color: red;
 
+    font-size: 0.9rem;
+    font-weight: 400;
+}
 .submitBtn {
     margin: 3vh var(--paddingForMain);
     padding: 0.8rem 2rem;

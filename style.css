@@ -30,6 +30,8 @@ body {
 .banner, .main {
     height: 100%;
     width: 100%;
+
+    overflow: hidden;
 }
 
 .banner {
@@ -71,6 +73,9 @@ body {
 
 .main {
     background-color: rgb(238, 236, 247);
+
+    position: relative;
+    overflow: scroll;
 
     --paddingForMain: 3vw;
 
@@ -178,4 +183,15 @@ body {
 }
 .already > a:active {
     color: rgb(76, 48, 180);
+}
+
+.author {
+    position: absolute;
+    bottom: 0%;
+
+    margin: 0.6rem 0.6rem;
+
+    align-self: flex-end;
+
+    font-size: 1rem;
 }

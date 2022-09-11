@@ -26,12 +26,6 @@ body {
     /* background-color: antiquewhite; */
 }
 
-.logo>img {
-    --logoImgSize: 6rem;
-    width: var(--logoImgSize);
-    height: var(--logoImgSize);
-}
-
 .banner, .main {
     height: 100%;
     width: 100%;
@@ -53,8 +47,19 @@ body {
     margin-top: 25vh;
     padding: 1rem 1rem;
 
+    color: white;
+
     background-color: antiquewhite;
 }
+
+.logo>img {
+    --logoImgSize: 6rem;
+    width: var(--logoImgSize);
+    height: var(--logoImgSize);
+
+    color: white;
+}
+
 .logo-text {
     font-size: 3rem;
     font-weight: normal;

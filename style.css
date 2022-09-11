@@ -142,19 +142,25 @@ body {
 
     font-size: 1rem;
 }
+.formControls input:valid {
+    outline: 1px solid rgb(100, 150, 66);
+}
+:root {
+    --invalidOutline: 1px solid red;
+}
+.formControls input:invalid {
+    outline: var(--invalidOutline)
+}
+.formControls input:placeholder-shown {
+    outline: none;
+}
 .formControls input:focus {
     background-color: #fff;
     outline: 1px solid blue;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.466);
 }
-.formControls input:valid {
-    outline: 1px solid rgb(100, 150, 66);
-}
-.formControls input:invalid, .invalid {
-    outline: 1px solid red;
-}
-.formControls input:placeholder-shown {
-    outline: none;
+.formControls input[invalid] {
+    outline: var(--invalidOutline);
 }
 .pswdError {
     margin: 0%;

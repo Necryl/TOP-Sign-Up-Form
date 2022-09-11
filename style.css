@@ -84,7 +84,9 @@ body {
 }
 
 .main-text, .main-text *, .lets, .lets * {
-    font-weight: 500;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: 0%;
 }
 
 #theForm {
@@ -92,6 +94,7 @@ body {
 
     display: flex;
     flex-direction: column;
+    gap: 1rem;
 
     background-color: aquamarine;
 }
@@ -119,7 +122,39 @@ body {
 
 .submitBtn {
     margin: 3vh var(--paddingForMain);
-    width: 10rem;
+    padding: 0.8rem 2rem;
+    align-self: flex-start;
+
+    border: none;
+    border-radius: 0.7rem;
+
+    background-color: rgb(90, 60, 226);
+    color: rgb(236, 231, 250);
+    box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.418);
+    border-bottom: 0.18rem solid rgb(61, 45, 131);
+    border-top: 0.18rem solid rgb(113, 90, 218);
+
+    font-size: 0.9rem;
+    font-weight: 500;
+
+    transition: 100ms ease-in-out;
+}
+.submitBtn:hover {
+    background-color: rgb(98, 69, 230);
+    scale: 101%;
+    box-shadow: 2px 7px 6px rgba(0, 0, 0, 0.418);
+    border-bottom-color: rgb(65, 46, 150);
+    border-top-color: rgb(130, 120, 182);
+    transition: 50ms ease-in-out;
+}
+.submitBtn:active {
+    scale: 98%;
+    background-color: rgb(90, 60, 226);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.699);
+    border-bottom-color: rgb(61, 45, 131);
+    border-top-color: rgb(113, 90, 218);
+    color: #fff;
+    transition: 10ms ease-in-out;
 }
 
 .already {

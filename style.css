@@ -86,12 +86,14 @@ body {
 
 .main-text {
     padding: 3vh var(--paddingForMain);
+    line-height: 1.3rem;
 }
 
 .main-text, .main-text *, .lets, .lets * {
+    margin: 0%;
+
     font-weight: 400;
     font-size: 1.2rem;
-    margin: 0%;
 }
 
 #theForm {
